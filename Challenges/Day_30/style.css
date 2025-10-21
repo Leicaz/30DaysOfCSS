@@ -5,7 +5,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0, #120c56, #000000);;
+  background: linear-gradient(0,#de9714, #6b2609);
+  ;
 }
 
 .firework {
@@ -22,11 +23,11 @@ body {
   overflow: hidden;
 }
 
-.explosion:nth-child(1){
+.explosion:nth-child(1) {
   transform: rotate(0deg)translateY(-15px);
 }
 
-.explosion:nth-child(2){
+.explosion:nth-child(2) {
   transform: rotate(30deg)translateY(-15px);
 }
 
@@ -41,12 +42,12 @@ body {
 .explosion:nth-child(5) {
   transform: rotate(120deg)translateY(-15px);
 }
-.explosion:nth-child(6)
-{
+
+.explosion:nth-child(6) {
   transform: rotate(150deg)translateY(-15px);
 }
-.explosion
-:nth-child(7){
+
+.explosion:nth-child(7) {
   transform: rotate(180deg)translateY(-15px);
 }
 
@@ -66,18 +67,18 @@ body {
   transform: rotate(300deg)translateY(-15px);
 }
 
-.explosion:nth-child(12){
+.explosion:nth-child(12) {
   transform: rotate(330deg)translateY(-15px);
 }
 
-.explosion::before{
+.explosion::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   top: 100%;
   height: 40px;
-  background: linear-gradient(0, #EBBD3C,#F4785C);
+  background: linear-gradient(0, #EBBD3C, #F4785C);
 }
 
 @keyframes explosion {
@@ -85,7 +86,8 @@ body {
     top: 100%;
   }
 
-  33%, 100% {
+  33%,
+  100% {
     top: -50%;
   }
 }
@@ -99,8 +101,8 @@ body {
 #firework1 .explosion::before {
   animation: explosion 2s ease-in-out infinite;
 }
- 
-#firework2{
+
+#firework2 {
   left: 40%;
   top: 40%;
   transform: scale(.7);
@@ -109,14 +111,13 @@ body {
 #firework2 .explosion::before {
   animation: explosion 2s .6s ease-in-out infinite;
 }
- 
-#firework3{
+
+#firework3 {
   left: 60%;
-  top:60% ;
+  top: 60%;
   transform: scale(.4);
 }
 
-#firework3 .explosion::before{
+#firework3 .explosion::before {
   animation: explosion 2s .4s ease-in-out infinite;
 }
- 
